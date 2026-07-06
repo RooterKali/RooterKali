@@ -7,7 +7,7 @@ I focus on finding security vulnerabilities, understanding how systems break, an
 
 ### 🛠️ Skills & Tools
 
-**Languages & Systems**  
+**Development & Environment** 
 `Python` `Bash` `Linux`
 
 **Security Research**  
@@ -17,11 +17,11 @@ I focus on finding security vulnerabilities, understanding how systems break, an
 `AI-Assisted Workflows` `MCP Servers` `Security Automation`
 
 **Security Toolkit**  
-`Burp Suite` `ProjectDiscovery Tools` `Custom Private Tools`
+`Burp Suite` `ProjectDiscovery Toolkit` `Custom Security Tools`
 
 ---
 
 ### 🚀 Current Focus
 
-- Building security tools & scripts
+- Building security automation tools
 - Documenting real-world security research
