@@ -1,5 +1,3 @@
-# 👋 Hi, I'm RooterKali
-
 🛡️ **Ethical Hacker | Bug Hunter | Security Researcher**
 
 I focus on finding security vulnerabilities, understanding how systems break, and improving application security through research and testing.
