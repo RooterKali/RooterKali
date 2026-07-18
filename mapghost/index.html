@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MapGhost Proof Gallery</title>
+<meta name="description" content="Proof gallery for the MapGhost dependency confusion audit tool.">
+<style>
+  :root{
+    --bg:#07110e;
+    --panel:#0e1d19;
+    --line:#214238;
+    --text:#e7f2ee;
+    --muted:#a8bbb4;
+    --accent:#7ef0b7;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    background:linear-gradient(180deg,#050807 0%,var(--bg) 100%);
+    color:var(--text);
+  }
+  main{
+    width:min(1040px,calc(100% - 32px));
+    margin:0 auto;
+    padding:48px 0 64px;
+  }
+  .eyebrow{
+    display:inline-block;
+    color:var(--accent);
+    font:600 12px/1 "JetBrains Mono",monospace;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+  }
+  h1{
+    margin:14px 0 0;
+    font-size:clamp(2rem,4vw,3rem);
+    line-height:1.05;
+    letter-spacing:-.04em;
+  }
+  p{
+    color:var(--muted);
+    line-height:1.7;
+    max-width:76ch;
+  }
+  .card{
+    margin-top:24px;
+    padding:20px;
+    border:1px solid rgba(126,240,183,.14);
+    border-radius:18px;
+    background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));
+    box-shadow:0 16px 40px rgba(0,0,0,.35);
+  }
+  .gallery{
+    display:grid;
+    gap:18px;
+  }
+  figure{
+    margin:0;
+  }
+  img{
+    display:block;
+    width:100%;
+    height:auto;
+    border-radius:14px;
+    border:1px solid rgba(126,240,183,.16);
+    background:#000;
+  }
+  figcaption{
+    margin-top:10px;
+    color:var(--muted);
+    font-size:.95rem;
+  }
+  .meta{
+    margin-top:14px;
+    font-size:.95rem;
+  }
+  a{color:var(--accent)}
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">MapGhost</div>
+  <h1>Proof gallery</h1>
+  <p>
+    This page shows real scan evidence from the dependency confusion audit tool. The portfolio links here so the
+    proof stays directly attached to the project.
+  </p>
+  <div class="card">
+    <div class="gallery">
+      <figure>
+        <img alt="MapGhost proof output" src="assets/proof-of-tool.png">
+        <figcaption>Main scan summary and finding breakdown.</figcaption>
+      </figure>
+    </div>
+    <p class="meta">Use this gallery alongside the project README: <a href="README.md">README.md</a></p>
+  </div>
+</main>
+</body>
+</html>
