@@ -3,28 +3,174 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RooterKali | Security Researcher</title>
+<title>RooterKali | Security Research & Automation</title>
+<meta name="description" content="Cybersecurity portfolio focused on web application security, API security, OAuth/SSO, automation, and validated research work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-<div class="brand">⚡ RooterKali</div>
-<nav>
-<a>Home</a><a>Projects</a><a>Research</a><a>Resume</a>
-</nav>
-</header>
+<div class="page-shell">
+  <header class="site-header">
+    <a class="brand" href="#top">RooterKali</a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#overview">Overview</a>
+      <a href="#automation">Automation</a>
+      <a href="#research">Research</a>
+      <a href="#featured-work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<section class="hero">
-<div class="tag">root@kali:~# whoami</div>
-<h1>Bug Bounty Hunter<br><span>Security Researcher</span></h1>
-<p>I find vulnerabilities, understand how systems break, and help build stronger security.</p>
-<div class="buttons"><button>View Research</button><button>GitHub</button></div>
-</section>
+  <main id="top">
+    <section class="hero section">
+      <div class="eyebrow">Security Research Portfolio</div>
+      <h1>Cybersecurity portfolio.</h1>
+      <p class="hero-copy">
+        Web security, API testing, dependency analysis, and practical automation.
+      </p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="https://github.com/RooterKali" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="button button-secondary" href="https://linkedin.com/in/poorav-saini-056849277" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="button button-secondary" href="#featured-work">Featured work</a>
+      </div>
+      <div class="hero-grid" id="overview">
+        <article class="metric">
+          <span>Focus</span>
+          <p>Validated research, repeatable workflows, and clear reporting.</p>
+        </article>
+        <article class="metric">
+          <span>Areas</span>
+          <p>Web apps, APIs, OAuth/SSO, dependency exposure, and access control.</p>
+        </article>
+        <article class="metric">
+          <span>Method</span>
+          <p>Manual validation first, automation where it supports the work.</p>
+        </article>
+      </div>
+    </section>
 
-<section class="cards">
-<div>🔍 Recon Automation</div>
-<div>🌐 Web Security</div>
-<div>🛡 Vulnerability Research</div>
-</section>
+    <section class="section" id="featured-work">
+      <div class="section-heading">
+        <div class="eyebrow">Featured work</div>
+        <h2>Two projects to review first.</h2>
+      </div>
+
+      <div class="work-grid">
+        <article class="panel featured">
+          <div class="panel-label">Private tool</div>
+          <h3>MapGhost</h3>
+          <p>
+            Dependency confusion audit tool with a project README and proof screenshot inside the repo.
+          </p>
+          <ul class="bullet-list">
+            <li>Finds exposed `.js.map` files</li>
+            <li>Parses imports from sourcemap content</li>
+            <li>Generates JSON and HTML reports</li>
+          </ul>
+          <div class="hero-actions compact-actions">
+            <a class="button button-secondary" href="https://github.com/RooterKali/RooterKali/blob/main/mapghost/README.md" target="_blank" rel="noreferrer">GitHub README</a>
+            <a class="button button-secondary" href="https://rooterkali.github.io/RooterKali/mapghost/" target="_blank" rel="noreferrer">Proof</a>
+          </div>
+          <div class="tag-row">
+            <span>Python</span>
+            <span>Node.js</span>
+            <span>Playwright</span>
+            <span>AST parsing</span>
+          </div>
+        </article>
+
+        <article class="panel featured">
+          <div class="panel-label">Research hub</div>
+          <h3>For Hackers From Hackers</h3>
+          <p>
+            A collection of writeups, tips, references, and practical notes built from real research work.
+          </p>
+          <ul class="bullet-list">
+            <li>Research notes and references</li>
+            <li>Reusable checks and workflow ideas</li>
+            <li>Practical security content</li>
+          </ul>
+          <div class="hero-actions compact-actions">
+            <a class="button button-secondary" href="https://github.com/RooterKali/For-Hackers-From-Hackers" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button button-secondary" href="https://rooterkali.notion.site/For-Hackers-From-Hackers-39f38b6b10fc8141ab35f6a3527a87fa" target="_blank" rel="noreferrer">Notes</a>
+          </div>
+          <div class="tag-row">
+            <span>Writeups</span>
+            <span>Recon</span>
+            <span>Wordlists</span>
+            <span>Notes</span>
+          </div>
+        </article>
+
+        <article class="panel featured">
+          <div class="panel-label">Agent skill</div>
+          <h3>npm-package-validation</h3>
+          <p>
+            A triage skill for separating real npm usage from false positives and deciding whether a finding is
+            actually takeoverable.
+          </p>
+          <ul class="bullet-list">
+            <li>Source-origin first validation</li>
+            <li>Runtime import and package-shape checks</li>
+            <li>Claimability-based verdicts</li>
+          </ul>
+          <div class="hero-actions compact-actions">
+            <a class="button button-secondary" href="https://github.com/RooterKali/npm-package-validation" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+          <div class="tag-row">
+            <span>Triage</span>
+            <span>Source maps</span>
+            <span>Claimability</span>
+            <span>Validation</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="research">
+      <div class="section-heading">
+        <div class="eyebrow">Research focus</div>
+        <h2>Areas I test regularly.</h2>
+      </div>
+
+      <div class="grid-4">
+        <article class="panel compact">
+          <h3>Web Applications</h3>
+          <p>OWASP Top 10, exposed panels, sensitive data exposure, logic flaws, and weak controls.</p>
+        </article>
+        <article class="panel compact">
+          <h3>APIs</h3>
+          <p>Broken access control, authorization issues, session handling, and request tampering.</p>
+        </article>
+        <article class="panel compact">
+          <h3>OAuth / SSO</h3>
+          <p>Identity flow review, account takeover paths, session abuse opportunities, and auth edge cases.</p>
+        </article>
+        <article class="panel compact">
+          <h3>Supply Chain</h3>
+          <p>Dependency confusion, package exposure, JS/JSON source review, and takeover candidates.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section cta" id="contact">
+      <div>
+        <div class="eyebrow">Contact</div>
+        <h2>Contact details.</h2>
+        <p>Email, GitHub, LinkedIn, and X profile.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:puneetsaini1999@gmail.com">puneetsaini1999@gmail.com</a>
+        <a href="https://github.com/RooterKali" target="_blank" rel="noreferrer">github.com/RooterKali</a>
+        <a href="https://linkedin.com/in/poorav-saini-056849277" target="_blank" rel="noreferrer">linkedin.com/in/poorav-saini-056849277</a>
+        <a href="https://x.com/puneet_hack3r" target="_blank" rel="noreferrer">@puneet_hack3r</a>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script src="js/main.js"></script>
 </body>
 </html>
