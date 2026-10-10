@@ -56,10 +56,8 @@ Model Context Protocol · Agent Architecture · Autonomous Recon
 
 ## 📊 Stats
 
-<img src="https://github-readme-stats.vercel.app/api?username=RooterKali&show_icons=true&theme=nightowl&hide_border=true" height="165" alt="GitHub stats"/>
+<img src="https://github-readme-stats.vercel.app/api?username=RooterKali&show_icons=true&theme=nightowl&hide_border=true&hide_title=true" height="165" alt="GitHub stats"/>
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=RooterKali&theme=nightowl&hide_border=true" height="165" alt="Contribution streak"/>
-<br/><br/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs?username=RooterKali&layout=compact&theme=nightowl&hide_border=true" height="120" alt="Top languages"/>
 
 </div>
 
