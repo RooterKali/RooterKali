@@ -435,7 +435,7 @@ code{
 /* credentials */
 .cred-grid{
   display:grid;
-  grid-template-columns:repeat(4, minmax(0, 1fr));
+  grid-template-columns:repeat(3, minmax(0, 1fr));
   gap:18px;
   margin-top:36px;
 }
@@ -521,6 +521,17 @@ code{
   text-underline-offset:3px;
 }
 
+.ctf-grid{
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0, 1fr));
+  gap:18px;
+  margin-top:36px;
+}
+
+.ctf-grid .tag-row{
+  margin-top:14px;
+}
+
 .section-heading p{
   max-width:70ch;
   margin:16px 0 0;
@@ -565,6 +576,7 @@ code{
   .grid-4,
   .grid-2,
   .cred-grid,
+  .ctf-grid,
   .hero-grid{
     grid-template-columns:1fr;
   }
