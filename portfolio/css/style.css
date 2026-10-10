@@ -432,39 +432,91 @@ code{
 }
 
 /* credentials */
-.cred-list{
-  list-style:none;
+/* credentials */
+.cred-grid{
+  display:grid;
+  grid-template-columns:repeat(4, minmax(0, 1fr));
+  gap:18px;
+  margin-top:36px;
+}
+
+.cred-card{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  padding:20px;
+  background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+  border:1px solid rgba(126,240,183,.14);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  transition:border-color .18s ease, transform .18s ease;
+}
+
+.cred-card:hover{
+  border-color:rgba(126,240,183,.32);
+  transform:translateY(-2px);
+}
+
+.cred-card-head{
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+}
+
+.cred-card-head h3{
+  margin:0 0 4px;
+  font-size:1rem;
+  line-height:1.3;
+}
+
+.cred-badge{
+  flex:0 0 auto;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:52px;
+  min-height:38px;
+  padding:0 10px;
+  border-radius:12px;
+  border:1px solid rgba(126,240,183,.28);
+  background:rgba(126,240,183,.1);
+  color:var(--accent);
+  font:700 13px/1 "JetBrains Mono",monospace;
+  letter-spacing:.04em;
+}
+
+.cred-org{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+}
+
+.cred-desc,
+.cred-note{
   margin:0;
-  padding:0;
-  display:grid;
-  gap:16px;
-}
-
-.cred-list li{
-  display:grid;
-  gap:4px;
-  padding-bottom:16px;
-  border-bottom:1px solid rgba(126,240,183,.1);
-}
-
-.cred-list li:last-child{
-  padding-bottom:0;
-  border-bottom:none;
-}
-
-.cred-list strong{
-  font-size:1.02rem;
-  color:var(--text);
-}
-
-.cred-meta{
   color:var(--muted);
   font-size:.92rem;
-  line-height:1.6;
+  line-height:1.65;
 }
 
-.cred-meta a{
+.cred-note{
+  font-size:.84rem;
   color:var(--accent);
+  opacity:.85;
+}
+
+.cred-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  margin-top:auto;
+  padding-top:4px;
+}
+
+.cred-links a{
+  color:var(--accent);
+  font-size:.88rem;
+  font-weight:600;
   text-decoration:underline;
   text-underline-offset:3px;
 }
@@ -512,6 +564,7 @@ code{
   .proof-grid,
   .grid-4,
   .grid-2,
+  .cred-grid,
   .hero-grid{
     grid-template-columns:1fr;
   }
